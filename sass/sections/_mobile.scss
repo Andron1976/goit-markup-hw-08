@@ -29,35 +29,35 @@
             width: 40px;
             height: 40px;
             z-index: 50;
-        border: 2px solid #000;}
+            }
             
 .mobile__btn:hover .mobile__line {
-                 background-color: $specific-color;
+                  background-color: $specific-color;
             }
-.mobile__btn .modal__line:nth-child(1) {
+.mobile__btn .mobile__line:nth-child(1) {
                 transform: translate(-50%, -7px);
            }
             
-.mobile__btn .modal__line:nth-child(2) {
+.mobile__btn .mobile__line:nth-child(2) {
                 transform: translate(-50%, 0);
             }
             
-             .mobile__btn .modal__line:nth-child(3) {
+.mobile__btn .mobile__line:nth-child(3) {
                  transform: translate(-50%, 7px);
              }
             
-             .mobile__btn.is-open .modal__line:nth-child(1) {
-                 transform: translate(-50%, 0) rotate(45deg);             }
+ .mobile__btn.is-open .mobile__line:nth-child(1) {
+     transform: translate(-50%, 0) rotate(45deg);             }
             
-            .mobile__btn.is-open .modal__line:nth-child(2) {
+.mobile__btn.is-open .mobile__line:nth-child(2) {
                  width: 0;
              }
             
-             .mobile__btn.is-open .modal__line:nth-child(3) {
+.mobile__btn.is-open .mobile__line:nth-child(3) {
                  transform: translate(-50%, 0) rotate(-45deg);
              }
         
-         .mobile__line {
+            .mobile__line {
              display: inline-block;
             position: absolute;
              left: 50%;
@@ -80,13 +80,16 @@
              height: 100%;
              background: rgb(255, 255, 255);
              transition: $transition;
-
              }
-        .mobile.is-open {
+        .mobile__box.is-open {
             top: 0;
         }
          .nav__item:not(:last-child) {
             margin-bottom: 32px;
+        }
+        .nav__box {
+            display: flex;
+            flex-direction: column;
         }
          .nav__link {
              color: $title-color;
@@ -96,7 +99,7 @@
              letter-spacing: 0.02em;
              transition: $transition;
         
-             &--current {
+             &.selected {
              color: $specific-color;
          }
         
@@ -117,16 +120,19 @@
          .mobile__mail {
              font-size: 24px;
              color: $primary-color;
+             margin-left: auto;
          }
         
          .mobile__tel {
              font-size: 34px;
              color: $specific-color;
+             margin-left: auto;
          }
          .mobile__socials-list {
              display: flex;
              flex-direction: row;
              align-items: center;
+             justify-content: flex-start;
          }
         
          .mobile__socials-item:not(:last-child) {
@@ -144,6 +150,7 @@
          }
         
          .mobile__socials-link {
+             font-weight: 500;
              font-size: 18px;
              letter-spacing: 0.02em;
              color: $specific-color;
