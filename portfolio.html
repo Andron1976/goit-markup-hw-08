@@ -20,41 +20,108 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="nav">
+        <div class="decktop">
           <a href="./index.html" class="logo"
             >Web<span class="logo--black">Studio</span></a
           >
-          <ul class="nav__box">
-            <li class="nav__item">
-              <a href="index.html" class="nav__link">Студия</a>
-            </li>
-            <li class="nav__item">
-              <a href="./portfolio.html" class="nav__link nav__link--selected"
-                >Портфолио</a
+          <nav class="nav">
+            <ul class="nav__box">
+              <li class="nav__item">
+                <a href="index.html" class="nav__link">Студия</a>
+              </li>
+              <li class="nav__item">
+                <a href="./portfolio.html" class="nav__link nav__link--selected"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="nav__item">
+                <a href="" class="nav__link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+          <!--contact section-->
+          <ul class="contacts">
+            <li>
+              <a href="mailto:info@devstudio.com" class="contacts__item">
+                <svg class="contacts__icon">
+                  <use href="./images/sprite.svg#icon-envelopeok"></use></svg
+                >info@devstudio.com</a
               >
             </li>
-            <li class="nav__item">
-              <a href="" class="nav__link">Контакты</a>
+            <li>
+              <a href="tel:+380961111111" class="contacts__item"
+                ><svg class="contacts__icon">
+                  <use href="./images/sprite.svg#icon-telok"></use></svg
+                >+38 096 111 11 11</a
+              >
             </li>
           </ul>
-        </nav>
-        <!--contact section-->
-        <ul class="contacts">
-          <li>
-            <a href="mailto:info@devstudio.com" class="contacts__item">
-              <svg class="contacts__icon">
-                <use href="./images/sprite.svg#icon-envelopeok"></use></svg
-              >info@devstudio.com</a
-            >
-          </li>
-          <li>
-            <a href="tel:+380961111111" class="contacts__item"
-              ><svg class="contacts__icon">
-                <use href="./images/sprite.svg#icon-telok"></use></svg
-              >+38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
+        <!--mobile-->
+        <div class="mobile">
+          <a href="./index.html" class="logo"
+            >Web<span class="logo--black">Studio</span></a
+          >
+          <div class="mobile__btn" data-menu-button>
+            <span class="mobile__line"></span>
+            <span class="mobile__line"></span>
+            <span class="mobile__line"></span>
+          </div>
+          <div class="mobile__box" id="mobile-menu" data-menu>
+            <nav class="nav">
+              <ul class="nav__box">
+                <li class="nav__item">
+                  <a href="index.html" class="nav__link">Студия</a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    href="./portfolio.html"
+                    class="nav__link nav__link--selected"
+                    >Портфолио</a
+                  >
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+            <!--contact section-->
+            <div class="mobile__contacts">
+              <ul class="contacts">
+                <li>
+                  <a href="mailto:info@devstudio.com" class="contacts__item">
+                    <svg class="contacts__icon">
+                      <use
+                        href="./images/sprite.svg#icon-envelopeok"
+                      ></use></svg
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li>
+                  <a href="tel:+380961111111" class="contacts__item"
+                    ><svg class="contacts__icon">
+                      <use href="./images/sprite.svg#icon-telok"></use></svg
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+              <ul class="mobile__socials-list">
+                <li class="mobile__socials-item">
+                  <a class="mobile__socials-link" href="#">Instagram</a>
+                </li>
+                <li class="mobile__socials-item">
+                  <a class="mobile__socials-link" href="#">Twitter</a>
+                </li>
+                <li class="mobile__socials-item">
+                  <a class="mobile__socials-link" href="#">Facebook</a>
+                </li>
+                <li class="mobile__socials-item">
+                  <a class="mobile__socials-link" href="#">LinkedIn</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
 

@@ -581,13 +581,16 @@ h3 {
   padding: 25px 0;
 }
 
-.header > .container {
+.header > .container > .decktop {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav {
@@ -602,7 +605,7 @@ h3 {
 }
 
 .nav__box {
-  margin-left: 93px;
+  margin-right: 98px;
 }
 
 .nav__item {
