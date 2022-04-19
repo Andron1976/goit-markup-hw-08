@@ -7,6 +7,7 @@
 
 .footer__box {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .footer__contacts {
@@ -70,6 +71,7 @@
 
 .footer__registration {
     @include flex-center;
+    flex-wrap: wrap;
 }
 
 .footer__input {
