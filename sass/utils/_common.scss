@@ -1,0 +1,48 @@
+body {
+    color: $primary-color;
+    background-color: $accent-color;
+    font-family: $basic-font-family;
+}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+h2,
+h3 {
+    color: $title-color;
+    font-weight: 700;
+}
+.hidden {
+    display: none;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1170px;
+}
