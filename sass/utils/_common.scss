@@ -44,5 +44,24 @@ h3 {
 .container {
     margin-left: auto;
     margin-right: auto;
-    width: 1170px;
+    max-width: 1200px;
+}
+
+@media (max-width: 1200px) {
+    .section__title {
+        font-size: 28px;
+        line-height: 1.17;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 1200px) {
+    .section {
+        padding: 60px 15px;
+    }
+}
+
+@media (min-width: 1201px) {
+    .section {
+        padding: 94px 0;
+    }
 }
