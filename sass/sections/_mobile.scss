@@ -113,6 +113,8 @@
          }
          .contacts {
              margin-bottom: 64px;
+             display: flex;
+             flex-direction: column;
          }
          .contacts__items:not(:last-child) {
              margin-bottom: 32px;

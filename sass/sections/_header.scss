@@ -1,3 +1,5 @@
+@media (min-width: 1200px) {
+
 .header {
     background-color: $accent-color;
     border-bottom: 1px solid #ececec;
@@ -86,5 +88,103 @@
     &:focus .contacts__icon {
         fill: $specific-color;
     }
+}}
+
+//tablet
+
+@media (min-width: 769px) and (max-width: 1200px) {
+.header {
+    background-color: $accent-color;
+    border-bottom: 1px solid #ececec;
+    padding: 21px 15px;
 }
+
+.header>.container> {
+    display: flex;
+    justify-content: space-between;
+}
+
+.decktop {
+    display: flex;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    line-height: 16px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.nav__box {
+    justify-content: center;
+}
+
+.nav__item {
+    position: relative;
+    margin: 0 50px 0 0;
+    padding: 0;
+}
+
+.nav__link {
+    color: $title-color;
+    text-decoration: none;
+    transition: $transition;
+
+    &--selected::after {
+        content: "";
+        position: absolute;
+        bottom: -33px;
+        left: 0;
+        width: 100%;
+        height: 4px;
+        background-color: $specific-color;
+        border-radius: 2px;
+    }
+
+
+
+    &:hover,
+    &:focus {
+        color: $specific-color;
+    }
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 50px;
+}
+
+.contacts__icon {
+    width: 16px;
+    height: 16px;
+    fill: $primary-color;
+    margin-right: 10px;
+    transition: $transition;
+}
+
+.contacts__item {
+    color: $primary-color;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    text-decoration: none;
+    margin-right: auto;
+    transition: color $transition fill $transition;
+
+
+    &:hover,
+    &:focus {
+        color: $specific-color;
+    }
+
+    &:hover .contacts__icon,
+    &:focus .contacts__icon {
+        fill: $specific-color;
+    }}}
+
+
 
