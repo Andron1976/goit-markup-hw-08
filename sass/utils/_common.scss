@@ -2,6 +2,15 @@ body {
     color: $primary-color;
     background-color: $accent-color;
     font-family: $basic-font-family;
+    @media (max-width: 480px) {
+        padding-top: 80px;
+        
+    }
+    @media (min-width: 480px)and (max-width: 769px) {
+        padding-top: 60px;
+    
+    }
+
 }
 
 section {
@@ -14,8 +23,11 @@ ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    @media (mшx-width: 1201px) {
+        justify-content: space-between;
+    
+    }
 }
 
 img {
