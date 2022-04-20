@@ -184,7 +184,11 @@
     &:hover .contacts__icon,
     &:focus .contacts__icon {
         fill: $specific-color;
-    }}}
+    }}
+.nav__link--selected {
+    color: $specific-color;
+}
+}
 
 @media (min-width: 769px) {
 .header {border-bottom: 1px solid #ececec;}}

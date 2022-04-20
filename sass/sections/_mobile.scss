@@ -100,7 +100,7 @@
              letter-spacing: 0.02em;
              transition: $transition;
         
-             &.selected {
+        .selected {
              color: $specific-color;
          }
         
