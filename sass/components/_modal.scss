@@ -11,6 +11,7 @@
     opacity: 1;
     transition: opacity $transition,
       transform  $transition;
+      z-index: 1000;
 
 
 &--hidden {
@@ -33,7 +34,7 @@
         0px 2px 1px rgba(0, 0, 0, 0.2);
     transition: transform $transition;
     @media (max-width: 1201px) {
-        max-width: 450px;
+         width: calc(100% - 30px);
        
     }
     @media (max-width: 768px) {
@@ -114,8 +115,7 @@
 
 .modal__input {
     position: relative;
-    padding-right: 100px;
-    width: 450px;
+    width: 100%;
     height: 40px;
     font-size: 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -134,7 +134,7 @@
         fill: $specific-color;
     }
     @media (max-width: 1200px) {
-        width: 370px;
+        width: calc(100% - 30px);
     }
 }
 
@@ -196,6 +196,7 @@
     width: 15px;
     height: 15px;
     fill: transparent;
+    align-self: center;
 }
 
 .modal__checkbox--active:checked~.modal__checkmart {
