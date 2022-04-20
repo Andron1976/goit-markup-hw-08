@@ -1121,9 +1121,6 @@ h3 {
 }
 
 @media (min-width: 1201px) {
-  .features {
-    margin-bottom: 94px;
-  }
   .features__card {
     width: 270px;
   }
