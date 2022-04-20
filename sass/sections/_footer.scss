@@ -3,17 +3,36 @@
     padding-top: 60px;
     padding-bottom: 60px;
     display: flex;
+    
 }
 
 .footer__box {
     display: flex;
     flex-wrap: wrap;
+    
+    @media (max-width: 480px) {
+    justify-content: center;
+    flex-direction: column;
+    }
 }
 
 .footer__contacts {
-    padding: 0px;
+    // padding: 0px;
     display: flex;
     flex-direction: column;
+    @media (max-width: 1200px) {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    @media (max-width: 480px) {
+    
+        margin-bottom: 60px;
+    }
+}
+@media (min-width: 1201px){
+.footer__logo {
+    margin-bottom: 20px;}
+
 }
 
 .footer__address {
@@ -24,7 +43,10 @@
     margin-bottom: 9px;
     margin-top: 20px;
     transition: color $transition;
-
+    @media (max-width: 480px) {
+    
+        margin-bottom: 8px;
+    }
     &:hover,
     &:focus {
         color: $specific-color;
@@ -42,16 +64,29 @@
     line-height: 1.71;
     text-decoration: none;
     transition: color $transition;
-
+    display: flex;
+    flex-direction: column;
+    
     &:hover,
     &:focus {
-    color: var(--specific-color);
-}}
+    color: var(--specific-color);}
+    
+}
 
 /*aside-box*/
 .footer__socials {
     padding-top: 12px;
-    margin-left: 70px;
+    @media (min-width: 1201px) {
+        margin-left: 70px;
+    
+    }
+    
+    @media (max-width: 480px) {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 60px;
+    }
 }
 
 .footer__title {
@@ -61,12 +96,17 @@
     margin-bottom: 20px;
     text-transform: uppercase;
     color: $accent-color;
+    @media (max-width: 480px){
+        text-align: center;
+    }
+    
 }
 .footer__form {
     display: flex;
     flex-direction: column;
     padding: 12px 0 0;
-    margin-left: 83px;
+    @media (min-width: 1201px){
+    margin-left: 83px;}
 }
 
 .footer__registration {
@@ -85,10 +125,18 @@
     box-sizing: border-box;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    margin-right: 12px;
+    
     padding-left: 16px;
     outline: none;
     transition: border $transition;
+
+    @media (min-width: 1201px) {
+        margin-right: 12px;
+    }
+    @media (max-width: 480px){
+        margin-bottom: 20px;
+    }
+
 
 
     &::placeholder {
@@ -98,3 +146,55 @@
     &:focus {
     border: 1px solid $specific-color;
 }}
+    .button--decorated {
+    @include flex-center;
+    // flex-wrap: wrap;
+
+    }
+.button__pic {
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+@media (min-width: 481px) and (max-width: 1200px) {
+    .footer {
+        &__box {
+            width: 700px;
+
+            justify-content: space-between;
+        }
+
+        &__contacts {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+        }
+
+        &__socials {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            align-items: center;
+        }
+
+        &__form {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            align-items: center;
+            margin: 0 auto;
+        }
+
+        &__registration {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__input {
+            margin-bottom: 20px;
+        }
+    }
+}

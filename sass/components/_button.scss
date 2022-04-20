@@ -15,14 +15,4 @@
     transition: background-color $transition;
 
     &:focus {
-    background-color: #188ce8;}}
-&--decorated {
-    @include flex-center;
-    flex-wrap: wrap;
-}}
-
-.button__pic {
-    width: 24px;
-    height: 24px;
-    margin-left: 10px;
-}
+    background-color: #188ce8;}}}

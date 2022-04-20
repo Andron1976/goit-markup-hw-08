@@ -1,9 +1,15 @@
+
+    @media (max-width: 1200px) {
+        .promo__section {display: none;}
+    }
+
 .promo {
     margin-top: 0px;
     margin-bottom: 0px;
     display: flex;
     justify-content: space-between;
     padding: 0px;
+    
 }
 
 .promo__pisc {
