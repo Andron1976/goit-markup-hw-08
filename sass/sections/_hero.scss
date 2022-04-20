@@ -7,15 +7,15 @@
         url("../../images/hero/mobile1.jpg") center/cover no-repeat;
         padding: 200px 0;}}
 
-        @media (max-width: 480px),
-        (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            & {
-                background-image: url("../../images/hero/mobile2.jpg") center/cover no-repeat;
-            }
-        }
+        // @media (max-width: 480px),
+        // (min-device-pixel-ratio: 2),
+        // (-webkit-min-device-pixel-ratio: 2),
+        // (min-resolution: 192dpi),
+        // (min-resolution: 2dppx) {
+        //     & {
+        //         background-image: url("../../images/hero/mobile2.jpg") center/cover no-repeat;
+        //     }
+        // }
     
 
     @media (min-width: 481px) and (max-width: 1200px) {
